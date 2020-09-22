@@ -13,8 +13,7 @@ end
 def bubble_sort_by(arr)
   arr.length.times do |i|
     (1...arr.length - i).each do |j|
-      element = yield(arr[j], arr[j - 1]).positive?
-      next unless element == false
+      next unless yield(arr[j], arr[j - 1]).negative?
 
       temp = arr[j]
       arr[j] = arr[j - 1]
