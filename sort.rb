@@ -27,4 +27,4 @@ end
 my_array = [15, 9, 7, 2, 3, 1]
 print bubble_sorting(my_array)
 
-print bubble_sort_by(%w[hello iiiiiiii hell h]) { |left, right| left.length - right.length }
+print bubble_sort_by(%w[hello hey hell hi]) { |left, right| left.length - right.length }
